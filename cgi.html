@@ -1,17 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <title>Loading...</title>
 
 <style>
-    /* صفحة التحميل */
     #loader {
         position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
+        inset: 0;
         background: #000;
         display: flex;
         justify-content: center;
@@ -20,31 +16,40 @@
     }
 
     #loader video {
-        width: 1200px;
-        border-radius: 10px;
+        width: 100%;
+        max-width: 420px;
+        height: auto;
+        border-radius: 12px;
     }
 
-    /* إخفاء المحتوى الأساسي إلى أن ينتهي اللودينغ */
     #main-content {
         display: none;
     }
 </style>
 
 <script>
-    // إخفاء الفيديو وإظهار المحتوى بعد 3 ثواني
+document.addEventListener("DOMContentLoaded", () => {
     setTimeout(() => {
         document.getElementById("loader").style.display = "none";
         document.getElementById("main-content").style.display = "block";
-    }, 45000); // عدل المدة لو تحتاج
+    }, 45000);
+});
 </script>
-
 </head>
-<body>
+
+<body style="font-family: Roboto, sans-serif; background:#f5f7fa; margin:0;">
 
 <!-- شاشة الفيديو -->
 <div id="loader">
-    <video src="https://sumsub.com/wp/wp-content/videos/main/heroMainPageV2.webm" autoplay muted loop></video>
+    <video autoplay muted loop playsinline preload="auto">
+        <!-- يعمل على iPhone -->
+        <source src="https://sumsub.com/wp/wp-content/videos/main/heroMainPageV2.mp4" type="video/mp4">
+
+        <!-- يعمل على Chrome / Android -->
+        <source src="https://sumsub.com/wp/wp-content/videos/main/heroMainPageV2.webm" type="video/webm">
+    </video>
 </div>
+
 
 <!-- المحتوى الأصلي كامل -->
 <div id="main-content">
